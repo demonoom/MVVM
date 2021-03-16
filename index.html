@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <p>大家好，我是XXX{{tag}}</p>
+    <p>大家好，msg的内容是{{msg}}</p>
+    <p v-text="msg" title="哈哈"></p>
+    <p v-html="tag" title="哈哈"></p>
+    <input type="text" v-model="msg">
+    <button v-on:click="clickFn">按钮</button>
+    <p>{{car.brand}}</p>
+    <p v-text="car.color"></p>
+</div>
+<script src="./src/watcher.js"></script>
+<script src="src/observer.js"></script>
+<script src="./src/compile.js"></script>
+<script src="./src/vue.js"></script>
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            msg: 'hello vue',
+            tag: '<h3>noom</h3>',
+            car: {
+                brand: '大众',
+                color: 'yellow'
+            }
+        },
+        methods: {
+            clickFn() {
+                //在vue的methods中this应该指向当前实例
+                console.log(this)
+                // this.$data.msg = '哈哈哈'
+                this.msg = '嘿嘿嘿'
+            }
+        }
+    })
+</script>
+</body>
+</html>
