@@ -16,6 +16,8 @@ class Vue {
         this.proxy(this.$data)
         //把methods中所有的数据代理到了vm上
         this.proxy(this.$methods)
+
+
         //如果指定了el参数，对el进行解析
         if (this.$el) {
             //compile负责解析模板的内容

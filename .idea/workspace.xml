@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dada3c4b-d29d-4b78-b670-95bb8bbdaea6" name="Default Changelist" comment="" />
+    <list default="true" id="dada3c4b-d29d-4b78-b670-95bb8bbdaea6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +17,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ppaLlfGpRZPAwgZbsVHeqj5Xgv" />
   <component name="ProjectViewState">
@@ -37,7 +43,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615882431456</updated>
-      <workItem from="1615882432516" duration="26424000" />
+      <workItem from="1615882432516" duration="27267000" />
+      <workItem from="1615975649061" duration="6629000" />
     </task>
     <servers />
   </component>
@@ -50,6 +57,10 @@
     </state>
     <state x="293" y="94" key="SettingsEditor/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1615886632632" />
     <state x="2140" y="78" key="SettingsEditor/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1615886542958" />
+    <state x="662" y="243" width="596" height="560" key="find.popup" timestamp="1615989445044">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="662" y="243" width="596" height="560" key="find.popup/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1615989445044" />
     <state x="2303" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1615918398367">
       <screen x="1920" y="0" width="1440" height="870" />
     </state>
