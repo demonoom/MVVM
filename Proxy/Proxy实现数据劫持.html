@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let obj = {};
+    // 代理 obj
+    let handler = {
+        get: function(target, key, receiver) {
+            console.log('get', key);
+            return Reflect.get(target, key, receiver);
+        },
+        set: function(target, key, value, receiver) {
+            console.log('set', key, value);
+            return Reflect.set(target, key, value, receiver);
+        },
+        deleteProperty(target, key) {
+            console.log('delete', key);
+            delete target[key];
+            return true;
+        }
+    };
+    let data = new Proxy(obj, handler);
+    // 代理后只能使用代理对象 data，否则还用 obj 肯定没作用
+    console.log(data.name); // get name 、undefined
+    data.name = '尹天仇'; // set name 尹天仇
+    delete data.name; // delete name
+
+    let arr  = ['尹天仇', '我是一个演员', '柳飘飘', '死跑龙套的']
+    let array = new Proxy(arr,handler)
+</script>
+</body>
+</html>

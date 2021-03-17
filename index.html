@@ -17,6 +17,7 @@
 </div>
 <script src="./src/watcher.js"></script>
 <script src="src/observer.js"></script>
+<!--<script src="./Proxy/observer.js"></script>-->
 <script src="./src/compile.js"></script>
 <script src="./src/vue.js"></script>
 <script>
@@ -36,6 +37,11 @@
                 console.log(this)
                 // this.$data.msg = '哈哈哈'
                 this.msg = '嘿嘿嘿'
+            }
+        },
+        computed: {
+            info() {
+
             }
         }
     })

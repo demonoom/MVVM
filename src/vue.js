@@ -8,14 +8,17 @@ class Vue {
         this.$el = options.el
         this.$data = options.data
         this.$methods = options.methods
+        this.$computed = options.computed
 
         //监视data中的数据
         new Observer(this.$data)
+        // this.$data = Observer(this.$data)
 
         //把data中所有的数据代理到了vm上
         this.proxy(this.$data)
         //把methods中所有的数据代理到了vm上
         this.proxy(this.$methods)
+        this.proxy(this.$computed)
 
 
         //如果指定了el参数，对el进行解析

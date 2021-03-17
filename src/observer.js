@@ -17,6 +17,13 @@ class Observer {
      */
     walk(data) {
         if (!data || typeof data != 'object') return;
+        if (Array.isArray(data)) { // 如果是数组，遍历劫持数组的每个成员
+            data.forEach(v => {
+                this.walk(v);
+            });
+            // Vue 在这里还进行了数组方法的重写等一些特殊处理
+            return;
+        }
         Object.keys(data).forEach(key => {
             //给data对象的key设置getter和setter
             this.defineReactive(data, key, data[key])

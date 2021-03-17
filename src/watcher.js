@@ -28,7 +28,7 @@ class Watcher {
         //对比expr是否发生了改变，如果发生了改变，需要调用cb
         let oldValue = this.oldValue
         let newValue = this.getVMValue(this.vm, this.expr)
-        if (oldValue != newValue) {
+        if (oldValue !== newValue) {
             this.cb(newValue, oldValue)
         }
     }
@@ -55,6 +55,7 @@ class Dep {
     constructor() {
         //用于管理订阅者
         this.subs = []
+        // this.subs = new Set()//set类型，保证不会重复
     }
 
     /**
@@ -63,6 +64,7 @@ class Dep {
      */
     addSub(watcher) {
         this.subs.push(watcher)
+        // this.subs.add(watcher)
     }
 
     /**
